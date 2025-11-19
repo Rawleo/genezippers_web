@@ -23,6 +23,18 @@
   <script type="text/javascript" src="js/global-nav.js"></script>
 
   <style>
+    body {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
     /* --- 1. Layout Fixes (Flexbox) --- */
     .equal-height-container {
       display: flex;
@@ -59,15 +71,15 @@
 
     /* --- 3. Specific Typography Overrides --- */
 
-    .text-size-16 {
+    .text-size-18 {
       font-size: 1.25rem !important;
       /* Approx 20px */
       line-height: 1.6;
-    }
+    } */
 
     /* Make Team Member Names larger */
     .clean-card h2 {
-      font-size: 1.8rem;
+      /* font-size: 1.8rem; */
       font-weight: 600;
       /* Added a bit of weight for readability */
     }
@@ -137,7 +149,7 @@
       <header class="section background-dark">
         <div class="line">
           <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">About Us</h1>
-          <p class="margin-bottom-0 text-size-16 text-silver-hover">
+          <p class="margin-bottom-0 text-silver-hover">
             The team behind the analysis of DNA compression efficiency.
           </p>
         </div>
@@ -148,13 +160,13 @@
           <div class="m-12 l-8 center text-center margin-bottom-60">
             <h2 class="text-size-40 margin-bottom-30">Our Team</h2>
             <hr class="break-small background-primary break-center margin-bottom-30">
-            <p class="text-size-16 margin-bottom-30">
+            <p class="margin-bottom-30">
               The "GeneZippers" project is a Senior Comprehensive Study (Comps) focused on evaluating and comparing the
               efficiency of DNA compression algorithms.
               Our goal was to determine how algorithms like DNAZip and Biocompress perform against standard compression
               methods when handling massive genomic datasets.
             </p>
-            <a class="button button-dark-stroke text-size-12 rounded-btn" href="paper.html">
+            <a class="button button-dark-stroke rounded-btn" href="paper.html">
               READ THE PAPER
             </a>
           </div>
