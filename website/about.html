@@ -1,182 +1,228 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eleganter - New Amazing HTML5 Template</title>
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/responsee.css">
-    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
-    <link rel="stylesheet" href="css/template-style.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
-  </head>
-  
-  <body class="size-1140">
-  	<!-- PREMIUM FEATURES BUTTON -->
-  	<a target="_blank" class="hide-s" href="../template/eleganter-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/premium-features.png" alt=""></a>
-    <!-- HEADER -->
-    <header role="banner" class="position-absolute">    
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-transparent-hightlight full-width sticky">
-        <div class="s-12 l-2">
-          <a href="index.html" class="logo">
-            <!-- Logo White Version -->
-            <img class="logo-white" src="img/logo.png" alt="">
-            <!-- Logo Dark Version -->
-            <img class="logo-dark" src="img/logo-dark.png" alt="">
-          </a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | GeneZippers - Comps</title>
+
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="css/template-style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/global-nav.js"></script>
+
+  <style>
+    /* --- 1. Layout Fixes (Flexbox) --- */
+    .equal-height-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* --- 2. Card Styling & Fonts --- */
+    .clean-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none !important;
+
+      /* Flex settings for equal height */
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      /* FONT INCREASE: Base font for the card */
+      font-size: 1.1rem;
+    }
+
+    /* Push social icons to the bottom */
+    .clean-card>div:last-child {
+      margin-top: auto;
+    }
+
+    .clean-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    /* --- 3. Specific Typography Overrides --- */
+
+    .text-size-16 {
+      font-size: 1.25rem !important;
+      /* Approx 20px */
+      line-height: 1.6;
+    }
+
+    /* Make Team Member Names larger */
+    .clean-card h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      /* Added a bit of weight for readability */
+    }
+
+    /* Make Roles (Biocompress/DNAzip) larger (overriding text-size-12) */
+    .clean-card .text-primary {
+      font-size: 0.95rem !important;
+      /* Approx 15px */
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Button Polish */
+    .rounded-btn {
+      border-radius: 50px;
+      padding: 12px 30px;
+      /* Slightly larger button to match text */
+      font-size: 0.9rem;
+    }
+
+    /* Circular Team Avatars */
+    .team-avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f0f0f0;
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+
+    /* Social/Link Icons */
+    .social-icon {
+      font-size: 1.4rem;
+      /* Increased icon size */
+      color: #2c3e50;
+      margin: 0 8px;
+      /* More spacing between icons */
+      transition: color 0.2s;
+    }
+
+    .social-icon:hover {
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body class="size-1140">
+
+  <header role="banner" class="position-absolute">
+    <nav class="background-transparent background-transparent-hightlight full-width sticky">
+      <div class="s-12 l-2">
+        <a href="index.html" class="logo">
+          <strong class="text-white">GeneZippers</strong>
+        </a>
+      </div>
+      <div class="top-nav s-12 l-10">
+        <ul class="right chevron">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article>
+      <header class="section background-dark">
+        <div class="line">
+          <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">About Us</h1>
+          <p class="margin-bottom-0 text-size-16 text-silver-hover">
+            The team behind the analysis of DNA compression efficiency.
+          </p>
         </div>
-        <div class="top-nav s-12 l-10">
-          
-          <ul class="right chevron">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a>Services</a>
-              <ul>
-                <li><a>Service 1</a>
-                  <ul>
-                    <li><a>Service 1 A</a></li>
-                    <li><a>Service 1 B</a></li>
-                  </ul>
-                </li>
-                <li><a>Service 2</a></li>
-              </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    
-    <!-- MAIN -->
-    <main role="main">
-      <!-- Content -->
-      <article>
-        <header class="section background-dark">
-          <div class="line">        
-            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">About Us</h1>
-            <p class="margin-bottom-0 text-size-16">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-          </div>  
-        </header>
-        <div class="section background-white"> 
-          <div class="line">  
-            <h2 class="text-size-40 margin-bottom-30">Investigationes demonstraverunt lectores</h2>
-            <hr class="break-small background-primary margin-bottom-30">
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
-            et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p> 
-            <blockquote class="margin-top-bottom-20">
-              <h3 class="text-size-20 text-line-height-1 margin-bottom-15">Mirum est notare quam littera gothica</h3>
-              Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
-            </blockquote>
-            
-            <div class="line margin-top-30">
-              <div class="margin">
-                <div class="s-12 m-6 l-6">
-                  <img src="img/img-01.jpg" alt="">
-                  <p class="margin-top-30">
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; 
-                  est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc 
-                  putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc 
-                  nobis videntur parum clari, fiant sollemnes in futurum.
-                  </p>
-                </div>
-                <div class="s-12 m-6 l-6">
-                  <img src="img/img-02.jpg" alt="">
-                  <p class="margin-top-30">
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; 
-                  est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc 
-                  putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc 
-                  nobis videntur parum clari, fiant sollemnes in futurum.
-                  </p>
+      </header>
+
+      <div class="section background-white">
+        <div class="line">
+          <div class="m-12 l-8 center text-center margin-bottom-60">
+            <h2 class="text-size-40 margin-bottom-30">Our Team</h2>
+            <hr class="break-small background-primary break-center margin-bottom-30">
+            <p class="text-size-16 margin-bottom-30">
+              The "GeneZippers" project is a Senior Comprehensive Study (Comps) focused on evaluating and comparing the
+              efficiency of DNA compression algorithms.
+              Our goal was to determine how algorithms like DNAZip and Biocompress perform against standard compression
+              methods when handling massive genomic datasets.
+            </p>
+            <a class="button button-dark-stroke text-size-12 rounded-btn" href="paper.html">
+              READ THE PAPER
+            </a>
+          </div>
+
+          <div class="margin equal-height-container">
+
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x clean-card">
+                <img src="img/headshots/team-gavin.jpg" alt="Gavin Saxer" class="team-avatar"
+                  onerror="this.src='https://via.placeholder.com/150?text=GS'">
+
+                <h2 class="text-thin margin-bottom-10">Gavin Saxer</h2>
+                <p class="text-primary text-uppercase text-size-12 margin-bottom-20">Biocompress 1</p>
+                <p class="margin-bottom-30">
+                  Focused on the implementation and analysis of Biocompress 1.
+                </p>
+                <div>
+                  <a href="https://github.com/gavinsaxer" class="social-icon"><i class="icon-sli-social-github"></i></a>
+                  <a href="#" class="social-icon"><i class="icon-sli-envelope"></i></a>
                 </div>
               </div>
-            </div>      
-          </div>
-        </div> 
-      </article>
-    </main>
-    
-    <!-- FOOTER -->
-    <footer>
-      <!-- Contact Us -->
-      <div class="background-primary padding text-center">
-        <p class="h1">Contact Us: 0800 787 787</p>                                                                        
-      </div>
-      
-      <!-- Main Footer -->
-      <section class="background-dark full-width">
-        <!-- Map -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="s-12 grayscale center">  	  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1459734.5702753505!2d16.91089086619977!3d48.577103681657675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssk!2ssk!4v1457640551761" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-          </div>
-        </div>
-        
-        <!-- Collumn 2 -->
-        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
-          <div class="padding-2x">
-            <div class="line">              
-              <div class="float-left">
-                  <i class="icon-sli-location-pin text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">Company Address</h3>
-                  <p>Responsive Street 7<br>
-                     London / United Kingdom / Europe
-                  </p>               
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-envelope text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70 margin-bottom-30">
-                  <h3 class="margin-bottom-0">E-mail</h3>
-                  <p>contact@sampledomain.com<br>
-                     office@sampledomain.com
-                  </p>              
-                </div>
-                <div class="float-left">
-                  <i class="icon-sli-phone text-primary icon3x"></i>
-                </div>
-                <div class="margin-left-70">
-                  <h3 class="margin-bottom-0">Phone Numbers</h3>
-                  <p>0800 4521 800 50<br>
-                     0450 5896 625 16<br>
-                     0798 6546 465 15
-                  </p>             
-                </div>
             </div>
+
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x clean-card">
+                <img src="img/headshots/team-jared.jpg" alt="Jared Arroyo Ruiz" class="team-avatar"
+                  onerror="this.src='https://via.placeholder.com/150?text=JAR'">
+
+                <h2 class="text-thin margin-bottom-10">Jared Arroyo Ruiz</h2>
+                <p class="text-primary text-uppercase text-size-12 margin-bottom-20">DNAzip</p>
+                <p class="margin-bottom-30">
+                  Implementation and analysis of DNAzip.
+                </p>
+                <div>
+                  <a href="https://github.com/arroyoruizj" class="social-icon"><i
+                      class="icon-sli-social-github"></i></a>
+                  <a href="#" class="social-icon"><i class="icon-sli-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x clean-card">
+                <img src="img/headshots/team-ryan.jpg" alt="Ryan Son" class="team-avatar"
+                  onerror="this.src='https://via.placeholder.com/150?text=RS'">
+
+                <h2 class="text-thin margin-bottom-10">Ryan Son</h2>
+                <p class="text-primary text-uppercase text-size-12 margin-bottom-20">DNAzip</p>
+                <p class="margin-bottom-30">
+                  Implementation and analysis of DNAzip. Alignment and compression of genomic data.
+                </p>
+                <div>
+                  <a href="https://github.com/Rawleo" class="social-icon"><i class="icon-sli-social-github"></i></a>
+                  <a href="mailto:sonryan50@gmail.com" class="social-icon"><i class="icon-sli-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>  
-      </section>
-      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
-      
-      <!-- Bottom Footer -->
-      <section class="padding background-dark full-width">
-        <div class="s-12 l-6">
-          <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
-          <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
         </div>
-        <div class="s-12 l-6">
-          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
-        </div>
-      </section>
-    </footer>
-    <script type="text/javascript" src="js/responsee.js"></script>
-    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/template-scripts.js"></script>
-  </body>
+      </div>
+    </article>
+  </main>
+
+  <footer role="contentinfo"></footer>
+  <script type="text/javascript" src="js/responsee.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/template-scripts.js"></script>
+</body>
+
 </html>
