@@ -74,7 +74,7 @@
     .clean-card {
       background: #fff;
       border-radius: 8px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       overflow: hidden;
       height: 100%;
@@ -83,11 +83,22 @@
       flex-direction: column;
       /* CHANGED: Removed justify-content: center to allow flex-grow to work */
       align-items: center;
+      margin: 30px;
+      /* Increased to prevent shadow clipping */
     }
 
     .clean-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    /* --- POSTER PREVIEW --- */
+    .poster-preview {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      margin-bottom: 30px;
     }
 
     /* --- SPLIT LINK STYLES --- */
@@ -151,7 +162,7 @@
       <div class="line header-content">
         <div class="margin-top-bottom-40">
           <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">
-            From Bases to Bits: <br> An Evolution of DNA Compression Algorithms
+            From Bases to Bits: <br> An Analysis of Early DNA Compression Algorithms
           </h1>
           <div class="s-12 m-10 l-12 center">
             <p class="text-white text-size-20 margin-bottom-30">
@@ -216,51 +227,60 @@
           <hr class="break-small background-primary break-center">
         </div>
 
-        <div class="margin" style="display: flex; flex-wrap: wrap;">
+        <div class="margin">
+          <div class="owl-carousel carousel-default">
 
-          <div class="s-12 m-12 l-4 margin-m-bottom" style="display: flex; flex-direction: column;">
-            <div class="padding-2x clean-card">
-              <a href="posters.html" class="card-body-link">
-                <i class="icon-sli-doc icon3x text-dark center margin-bottom-30"></i>
-                <h2 class="text-thin">Gavin: Biocompress 1</h2>
-                <p class="margin-bottom-30">View Gavin's poster on Biocompress 1.</p>
-              </a>
-              <a href="img/posters/Saxer_Poster.pdf" target="_blank"
-                class="button button-dark-stroke text-size-14 rounded-btn">
-                VIEW POSTER
-              </a>
+            <!-- Poster 1 -->
+            <div class="item">
+              <div class="padding-2x clean-card">
+                <a href="posters.html" class="card-body-link">
+                  <img src="img/posters/Saxer_Poster.png" alt="Gavin's Poster" class="poster-preview">
+                  <h2 class="text-thin">Gavin: Biocompress 1</h2>
+                  <p class="margin-bottom-30">View Gavin's poster on Biocompress 1.</p>
+                </a>
+                <a href="img/posters/Saxer_Poster.pdf" target="_blank"
+                  class="button button-dark-stroke text-size-14 rounded-btn">
+                  VIEW POSTER
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="s-12 m-12 l-4 margin-m-bottom" style="display: flex; flex-direction: column;">
-            <div class="padding-2x clean-card">
-              <a href="posters.html" class="card-body-link">
-                <i class="icon-sli-doc icon3x text-dark center margin-bottom-30"></i>
-                <h2 class="text-thin">Jared: DNAZip</h2>
-                <p class="margin-bottom-30">View Jared's poster on DNAZip.</p>
-              </a>
-              <a href="img/posters/ArroyoRuiz_Poster.pdf" target="_blank"
-                class="button button-dark-stroke text-size-14 rounded-btn">
-                VIEW POSTER
-              </a>
+            <!-- Poster 2 -->
+            <div class="item">
+              <div class="padding-2x clean-card">
+                <a href="posters.html" class="card-body-link">
+                  <img src="img/posters/ArroyoRuiz_Poster.png" alt="Jared's Poster" class="poster-preview">
+                  <h2 class="text-thin">Jared: DNAzip</h2>
+                  <p class="margin-bottom-30">View Jared's poster on DNAzip.</p>
+                </a>
+                <a href="img/posters/ArroyoRuiz_Poster.pdf" target="_blank"
+                  class="button button-dark-stroke text-size-14 rounded-btn">
+                  VIEW POSTER
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="s-12 m-12 l-4 margin-m-bottom" style="display: flex; flex-direction: column;">
-            <div class="padding-2x clean-card">
-              <a href="posters.html" class="card-body-link">
-                <i class="icon-sli-doc icon3x text-dark center margin-bottom-30"></i>
-                <h2 class="text-thin">Ryan: DNAZip</h2>
-                <p class="margin-bottom-30">View Ryan's poster on DNAZip.</p>
-              </a>
-              <a href="img/posters/Son_Poster.pdf" target="_blank"
-                class="button button-dark-stroke text-size-14 rounded-btn">
-                VIEW POSTER
-              </a>
+            <!-- Poster 3 -->
+            <div class="item">
+              <div class="padding-2x clean-card">
+                <a href="posters.html" class="card-body-link">
+                  <img src="img/posters/Son_Poster.png" alt="Ryan's Poster" class="poster-preview">
+                  <h2 class="text-thin">Ryan: DNAzip</h2>
+                  <p class="margin-bottom-30">View Ryan's poster on DNAzip.</p>
+                </a>
+                <a href="img/posters/Son_Poster.pdf" target="_blank"
+                  class="button button-dark-stroke text-size-14 rounded-btn">
+                  VIEW POSTER
+                </a>
+              </div>
             </div>
-          </div>
 
+            </a>
+          </div>
         </div>
+
+      </div>
+      </div>
       </div>
     </section>
 
